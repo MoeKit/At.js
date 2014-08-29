@@ -6,13 +6,13 @@
 
 (function() {
   (function(factory) {
-    if (typeof define === 'function' && define.amd) {
+    if (typeof define === 'function') {
       return define(['jquery'], factory);
     } else {
       return factory(window.jQuery);
     }
   })(function($) {
-
+require('caret');
 var $CONTAINER, Api, App, Controller, DEFAULT_CALLBACKS, KEY_CODE, Model, View,
   __slice = [].slice;
 
